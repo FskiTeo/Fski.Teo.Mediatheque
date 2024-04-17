@@ -9,9 +9,12 @@ namespace Mediatheque.Core.Model
 
     public class ObjetDePret
     {
+        public int Id { get; set; }
         public string TitreDeLObjet { get; set; }
-        public string Emprunteur { get; set; }
-                
+        public string? Emprunteur { get; set; }
+
+        public ObjetDePret() { }
+
         public ObjetDePret(string titreDeLObjet)
         {
             this.TitreDeLObjet = titreDeLObjet;
